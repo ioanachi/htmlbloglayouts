@@ -144,7 +144,8 @@ body {
                   position: absolute;
                   z-index: 4;
                   top: 13px;
-                  left: 80px;
+                  left: 100px;
+                  min-width: 223px;
 
                   li {
                     ul {
@@ -152,25 +153,24 @@ body {
                         position: absolute;
                         z-index: 4;
                         top: 13px;
-
-
-                          }
-                        }
-                        ul {
-                          display: none;
-                        }
-
-                        &:hover {
-                          ul {
-                            display: block;
-                            margin-left: 110px;
+                        left: 70px;
+                        min-width: 240px;
                       }
                     }
 
-                      }
+                    ul {
+                      display: none;
+                    }
 
+                    &:hover {
+                      ul {
+                        display: block;
+                        margin-left: 110px;
+                      }
                     }
                   }
+                }
+              }
 
               ul {
                 display: none;
