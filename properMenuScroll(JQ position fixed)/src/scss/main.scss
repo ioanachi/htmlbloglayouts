@@ -108,7 +108,8 @@ body {
           color: red;
           background-color: white; // @import "home.scss";
 
-          &.home {
+
+          &.active {
             color: #0a28f5;
             border-bottom: 2px solid #0a28f5;
           }
@@ -163,6 +164,7 @@ body {
                     }
 
                     &:hover {
+
                       ul {
                         display: block;
                         margin-left: 110px;
@@ -177,6 +179,8 @@ body {
               }
 
               &:hover {
+                border-bottom: 2px solid #0a28f5;
+                
                 ul {
                   display: block;
                 }
@@ -195,10 +199,11 @@ body {
           }
         }
       }
+
       &.atTop {
-      margin-top: 0px;
-      position: fixed;
-    }
+        margin-top: 0;
+        position: fixed;
+      }
     }
 
     div {
@@ -234,7 +239,6 @@ body {
     position: static;
     z-index: 9;
   }
-
 
   footer {
     margin-top: 100px;
