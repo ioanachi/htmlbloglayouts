@@ -19,10 +19,10 @@ $(document).ready(function() {
       menu.removeClass("atTop");
     }
     console.log("test");
-  }) 
+  })
 
   $(".menu a").click(function() {
-    $(".menu a").removeClass("active");
+    $(".menu a").removeClass("active"); 
 
     $(this).addClass("active");
 
