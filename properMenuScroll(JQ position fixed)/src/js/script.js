@@ -15,16 +15,10 @@ $(document).ready(function() {
     console.log(doc);
     if (doc >= 100) {
       menu.addClass("atTop");
-
     }
-  })
-
-
-
-
-
-
-
-
-
-});
+      else {
+        menu.removeClass("atTop");
+      }
+      console.log("test");
+    })
+  });

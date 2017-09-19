@@ -87,7 +87,7 @@ body {
     }
 
     .menu {
-      position: fixed;
+      position: absolute;
       margin: 100px;
       padding: 0;
       color: red;
@@ -195,6 +195,10 @@ body {
           }
         }
       }
+      &.atTop {
+      margin-top: 0px;
+      position: fixed;
+    }
     }
 
     div {
@@ -230,6 +234,7 @@ body {
     position: static;
     z-index: 9;
   }
+
 
   footer {
     margin-top: 100px;
