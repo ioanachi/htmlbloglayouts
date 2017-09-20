@@ -180,7 +180,7 @@ body {
 
               &:hover {
                 border-bottom: 2px solid #0a28f5;
-                
+
                 ul {
                   display: block;
                 }
@@ -225,6 +225,7 @@ body {
         // right: 20px;
       }
     }
+
   }
 
   .welcome {
@@ -233,6 +234,13 @@ body {
 
   .mouse {
     margin-top: 200px;
+    .table{
+    background: transparent;
+
+
+
+    }
+
   }
 
   .button {
