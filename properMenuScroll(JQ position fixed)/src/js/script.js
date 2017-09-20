@@ -20,20 +20,38 @@ $(document).ready(function() {
     }
     console.log("test");
   })
-
   $(".menu a").click(function() {
-    $(".menu a").removeClass("active");  
-
+    $(".menu a").removeClass("active");
     $(this).addClass("active");
-
-
-
-
   });
 
+  $(".table tr th").click(function() {
+    $(".table tr th").removeClass("cell")
+    $(this).addClass("cell");
+  });
 
+  $(".mouse h3").click(function() {
+    $(this).html("You clicked this title. Why did you do that?");
+  });
 
+  var copii = $(".lista").children();
+  // console.log(typeof copii);
+  var originale = [];
+  $.each(copii, function(index, element) {
+    var itemHTML = $(element).children().html();
+    originale.push(itemHTML);
+  });
+  console.log(originale);
+  var slide = "This was clicked! Please click again";
+  $(".lista li").click(function() {
+    var index = $(this).index();
+if ($(this).html()==slide) {
+  $(this).html(originale[index]);
+}else{
+  $(this).html(slide);
 
+}
 
+  });
 
 });
