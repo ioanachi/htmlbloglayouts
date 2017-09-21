@@ -223,6 +223,7 @@ body {
         }
       }
     }
+
     .welcome {
       text-align: center;
     }
@@ -279,48 +280,75 @@ body {
           }
         }
       }
+
+      .whatever {
+      
+        li {
+          list-style: none;
+          display: inline-block;
+
+          .cloud1 {
+            font-size: 19px;
+          }
+
+          .cloud2 {
+            font-size: 13px;
+          }
+
+          .cloud3 {
+            font-size: 20px;
+          }
+
+          .cloud4 {
+            font-size: 30px;
+          }
+
+          .cloud5 {
+            font-size: 27px;
+          }
+
+          .cloud6 {
+            font-size: 18px;
+          }
+
+          .cloud7 {
+            font-size: 15px;
+          }
+
+          .cloud8 {
+            font-size: 10px;
+          }
+          .cloud9 {
+            font-size: 18px;
+          }
+
+          .cloud10 {
+            font-size: 17px;
+          }
+
+          .cloud11 {
+            font-size: 13px;
+          }
+
+          .cloud12 {
+            font-size: 19px;
+          }
+
+          .cloud13 {
+            font-size: 23px;
+          }
+          .cloud14 {
+            font-size: 10px;
+          }
+
+          .cloud15 {
+            font-size: 25px;
+          }
+
+        }
+      }
     }
-    .whatever{
-      padding-left: 800px;
-      background-color: red;
-text-decoration: none;
-
-      .tag{
-      background-color: red;
-      position:absolute;
-      min-width: 300px;
-      z-index: 10px;
-      text-decoration: none;
-
-
-    }
-      &.cloud1{
-      font-size: 15px;
-      background-color: red;
-      padding-left: 30px;
-      height:300px;
-    }
-      .cloud2{
-      font-size: 25px;
-      padding-left: 39px;
-        width: 480px;
-        text-align: right;
-    }
-      .cloud3{
-      font-size:40px;
-      padding-left: 80px;
-        width: 240px;
-        text-align: center;
-    }
-
-    }
-    }
-
-    }
-
-
-
-
+  }
 
   footer {
     margin-top: 100px;
