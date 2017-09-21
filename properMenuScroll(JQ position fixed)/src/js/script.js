@@ -43,7 +43,7 @@ $(document).ready(function() {
   });
   console.log(originale);
   var slide = "This was clicked! Please click again";
-  $(".lista li").click(function() {
+  $(".lista li a").click(function() {
     var index = $(this).index();
     if ($(this).html() == slide) {
       $(this).html(originale[index]);
@@ -62,12 +62,18 @@ $(document).ready(function() {
   //   }, 2000);
   // });
 
-$(".lista li").click(function(){
-  console.log("test");
-$(this).stop().animate({
-  paddingLeft:'50px',
-  backgroundColor:'#4E1402'
-}, 200);
+$(".lista li a").click(function(){
+  $(this).addClass("rosu");
+// $(this).animate({
+//   paddingLeft:'50px',
+// }, 200);
 
-})
+
+});
+
+
+
+
+
+
 });
