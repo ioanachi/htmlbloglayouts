@@ -45,13 +45,29 @@ $(document).ready(function() {
   var slide = "This was clicked! Please click again";
   $(".lista li").click(function() {
     var index = $(this).index();
-if ($(this).html()==slide) {
-  $(this).html(originale[index]);
-}else{
-  $(this).html(slide);
-
-}
-
+    if ($(this).html() == slide) {
+      $(this).html(originale[index]);
+    } else {
+      $(this).html(slide);
+    }
   });
+  $(".goToTop").click(function() {
+    $("html, body").animate({
+      scrollTop: '0px'
+    }, 2000);
+  });
+  // $("th").click(function() {
+  //   $(this).animate({
+  //     padding: '10px'
+  //   }, 2000);
+  // });
 
+$(".lista li").click(function(){
+  console.log("test");
+$(this).stop().animate({
+  paddingLeft:'50px',
+  backgroundColor:'#4E1402'
+}, 200);
+
+})
 });

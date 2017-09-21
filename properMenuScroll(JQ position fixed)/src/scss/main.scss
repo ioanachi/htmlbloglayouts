@@ -206,9 +206,9 @@ body {
 
     div {
       &.goToTop {
-        position: absolute; 
+        position: absolute;
         right: 20px;
-
+scroll-behavior: smooth;
         a {
           background: white;
           position: fixed;
@@ -227,7 +227,12 @@ body {
   .welcome {
     text-align: center;
   }
+.lista{
+text-decoration: none;
+list-style-type: none;
+text-align: left;
 
+}
   .mouse {
     margin-top: 200px;
 
@@ -256,11 +261,12 @@ body {
           padding: 5px;
           text-align: center;
           border: 1px solid #d9d9d9;
-          cursor: crosshair;
+          cursor:  pointer;
 
           &.cell {
             background: blue;
             color: white;
+
           }
           &.oct{
             color: #dddddd;
