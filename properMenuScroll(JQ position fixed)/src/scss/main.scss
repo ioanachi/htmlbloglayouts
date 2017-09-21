@@ -206,7 +206,7 @@ body {
 
     div {
       &.goToTop {
-        position: absolute;
+        position: absolute; 
         right: 20px;
 
         a {
@@ -220,7 +220,6 @@ body {
             width: 35px;
           }
         }
-        // right: 20px;
       }
     }
   }
