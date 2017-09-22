@@ -300,22 +300,28 @@ body {
           display: inline-block;
 
           .tiny {
+            text-transform: inherit;
             font-size: 13px;
           }
 
           .small {
             font-size: 18px;
+            text-transform: uppercase;
           }
 
           .medium {
             font-size: 24px;
+            text-transform: full-width;
+
           }
 
           .large {
+            text-transform: capitalize;
             font-size: 30px;
           }
 
           .huge {
+            text-transform: lowercase;
             font-size: 35px;
           }
         }

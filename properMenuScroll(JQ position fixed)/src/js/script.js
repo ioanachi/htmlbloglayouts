@@ -25,6 +25,9 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 
+
+
+  //
   $(".table tr th").click(function() {
     $(".table tr th").removeClass("cell")
     $(this).addClass("cell");
@@ -51,6 +54,7 @@ $(document).ready(function() {
       $(this).html(slide);
     }
   });
+  // functie sageata go to top
   $(".goToTop").click(function() {
     $("html, body").animate({
       scrollTop: '0px'
@@ -62,16 +66,56 @@ $(document).ready(function() {
   //   }, 2000);
   // });
 
-$(".lista li a").click(function(){
-  $(this).addClass("rosu");
-// $(this).animate({
-//   paddingLeft:'50px',
-// }, 200);
+  // $(".lista li a").click(function() {
+  //   $(this).addClass("rosu");
+  // $(this).animate({
+  //   paddingLeft:'50px',
+  // }, 200);
+
+  // added a random class to the tag cloud
+
+  var cloud = ["small", "tiny", "large", "huge", "medium"]
+  var maxim = cloud.length - 1;
+  console.log(maxim);
+
+  function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+$(".whatever li a").click(function() {
+    $(this).removeClass();
+
+    var numar = Math.round(getRandomArbitrary(0, maxim));
+    var valoare = cloud[numar];
+    console.log(valoare);
+    $(this).addClass(valoare);
 
 
-});
+  });
 
 
+function nrRandom(min,max){
+  var numar = Math.round(getRandomArbitrary(min, max));
+  return numar;
+}
+  //dinamic add classes
+  var whateverA = $('.whatever li a');
+  console.log(whateverA[0]);
+  $.each(whateverA, function(key,value) {
+    var varO = cloud[nrRandom(0,cloud.length-1)];
+    $(value).addClass(varO);
+    console.log(value);
+  });
+
+
+  //function that delets the paragraph when the paragraph is clicked
+$("p").click(function(){
+  $(this).remove()
+
+
+
+
+
+})
 
 
 
