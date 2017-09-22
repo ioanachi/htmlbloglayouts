@@ -134,15 +134,14 @@ $("p").click(function(){
 var lis = $(".lista li");
 console.log(lis);
 
-var randLista = lis[0, lis.length-1];
-for(i = 0; i < $lis.length; i++) {
 
-
+  var all = lis[nrRandom(0,lis.length-1)];
+lis.each(function(){
 $("button").click(function(){
-randLista.remove();
+all.remove();
 console.log("test");
+});
+});
 
-});
-});
 
 });
