@@ -1,6 +1,5 @@
 var $ = require("jquery");
 
-
 $(document).ready(function() {
 
   var menu = $(".menu");
@@ -141,7 +140,7 @@ $(document).ready(function() {
   $(".button").click(function() {
     lis[i].remove();
     i++;
-  console.log(originale);
+    console.log(originale);
   });
 
   //function that adds one of the paragraphs when the button is clicked
@@ -156,31 +155,43 @@ $(document).ready(function() {
   // button that adds a word in a sttring
 
 
-var text = "Ok";
-$(".buttonThree").click(function(){
-$(".special").append(text);
-});
+  var text = "Ok";
+  $(".buttonThree").click(function() {
+    $(".special").append(text);
+  });
 
-// button that replaces a word in a sttring
+  // button that replaces a word in a sttring
 
-$(".buttonFour").click(function(){
-  var replaCed = $(".special").html();
+  $(".buttonFour").click(function() {
+    var replaCed = $(".special").html();
 
-var ds = replaCed.replace("management", "crocodile");
-console.log(ds);
-$('.special').html(ds);
-});
-
-
+    var ds = replaCed.replace("management", "crocodile");
+    console.log(ds);
+    $('.special').html(ds);
+  });
 
 
-$(".buttonFive").click(function(){
-  var high = $(".highlight").html();
+  //buton care face highlight pe textul or
+  $(".buttonFive").click(function() {
+    var high = $(".highlight").html();
 
-var hI = high.replace(/or/g, "<b>or</b>");
-console.log(hI);
-$('.highlight').html(hI);
-});
+    var hI = high.replace(/or/g, "<b>or</b>");
+    console.log(hI);
+    $('.highlight').html(hI);
+  });
 
+
+
+  //button care face highlight pe textul din textarea in paragraf
+
+  $(".buttonSix").click(function() {
+    var collectText = $(".textar").val();
+    console.log(collectText);
+
+    var marck = $('.highlight').html();
+    // marck =  marck.replace(\\/collectText, "<b>" + collectText + "</b>");
+    marck = marck.replace( new RegExp( collectText, 'g' ), '<b class="hih">' + collectText + "</b>" );
+    $('.highlight').html(marck);
+  });
 
 });
