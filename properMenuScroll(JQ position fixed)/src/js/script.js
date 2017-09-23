@@ -144,17 +144,43 @@ $(document).ready(function() {
   console.log(originale);
   });
 
+  //function that adds one of the paragraphs when the button is clicked
+
+
   $(".buttonTwo").click(function() {
     console.log(originale[y]);
     $('.lista').append("<li><a href=\"#\">" + originale[y] + "</a></li>");
     y++;
   });
 
+  // button that adds a word in a sttring
+
+
 var text = "Ok";
 $(".buttonThree").click(function(){
-$(".special").html(text);
-
-
+$(".special").append(text);
 });
+
+// button that replaces a word in a sttring
+
+$(".buttonFour").click(function(){
+  var replaCed = $(".special").html();
+
+var ds = replaCed.replace("management", "crocodile");
+console.log(ds);
+$('.special').html(ds);
+});
+
+
+
+
+$(".buttonFive").click(function(){
+  var high = $(".highlight").html();
+
+var hI = high.replace(/or/, "<b>or</b>");
+console.log(hI);
+$('.highlight').html(hI);
+});
+
 
 });
