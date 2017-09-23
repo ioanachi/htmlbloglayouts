@@ -186,7 +186,6 @@ $(document).ready(function() {
 
   $(".buttonSix").click(function() {
     var collectText = $(".textar").val();
-    console.log(collectText);
 
     var marck = $('.highlight').html();
     // marck =  marck.replace(\\/collectText, "<b>" + collectText + "</b>");
