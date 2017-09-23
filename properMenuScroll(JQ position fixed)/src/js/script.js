@@ -177,7 +177,7 @@ $('.special').html(ds);
 $(".buttonFive").click(function(){
   var high = $(".highlight").html();
 
-var hI = high.replace(/or/, "<b>or</b>");
+var hI = high.replace(/or/g, "<b>or</b>");
 console.log(hI);
 $('.highlight').html(hI);
 });
