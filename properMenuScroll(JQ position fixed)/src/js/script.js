@@ -21,13 +21,13 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 
-/*
--------
-// click pe liste
--------
-*/
+  /*
+  -------
+  // click pe liste
+  -------
+  */
 
-//modificat calendarul cand se da click de o data
+  //modificat calendarul cand se da click de o data
 
   //
   $(".table tr th").click(function() {
@@ -36,7 +36,7 @@ $(document).ready(function() {
   });
 
 
-// modificat titlul cand se da click
+  // modificat titlul cand se da click
 
   $(".mouse h3").click(function() {
     $(this).html("You clicked this title. Why did you do that?");
@@ -44,18 +44,19 @@ $(document).ready(function() {
 
 
   //modificat tabelul cu submenu sa arate la al 2 lea click acelasi valoare
-// ia copii din lista adica li
+  // ia copii din lista adica li
   var copii = $(".lista").children();
   // creaza un array gol
   var originale = [];
   // baga in array valorile initiale din lista cu push
   $.each(copii, function(index, element) {
-    var itemHTML = $(element).children().html();
+    var a_uri = $(element).children();
+    var itemHTML = a_uri.html();
     originale.push(itemHTML);
   });
 
 
-// modifica textul la primul click
+  // modifica textul la primul click
   var slide = "This was clicked! Please click again";
 
   // verif daca textul e modificat si daca e inl schimba in original
@@ -99,7 +100,7 @@ $(document).ready(function() {
   function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
   }
-$(".whatever li a").click(function() {
+  $(".whatever li a").click(function() {
     $(this).removeClass();
 
     var numar = Math.round(getRandomArbitrary(0, maxim));
@@ -111,37 +112,49 @@ $(".whatever li a").click(function() {
   });
 
 
-function nrRandom(min,max){
-  var numar = Math.round(getRandomArbitrary(min, max));
-  return numar;
-}
+  function nrRandom(min, max) {
+    var numar = Math.round(getRandomArbitrary(min, max));
+    return numar;
+  }
   //dinamic add classes
   var whateverA = $('.whatever li a');
-  $.each(whateverA, function(key,value) {
-    var varO = cloud[nrRandom(0,cloud.length-1)];
+  $.each(whateverA, function(key, value) {
+    var varO = cloud[nrRandom(0, cloud.length - 1)];
     $(value).addClass(varO);
   });
 
 
   //function that delets the paragraph when the paragraph is clicked
-$("p").click(function(){
-  $(this).remove()
+  $("p").click(function() {
+    $(this).remove()
+  });
+  //function that delets one of the paragraphs when the button is clicked
+
+
+
+  var lis = $(".lista li");
+  console.log(lis);
+
+  var i = 0;
+  var y = 0;
+
+  $(".button").click(function() {
+    lis[i].remove();
+    i++;
+  console.log(originale);
+  });
+
+  $(".buttonTwo").click(function() {
+    console.log(originale[y]);
+    $('.lista').append("<li><a href=\"#\">" + originale[y] + "</a></li>");
+    y++;
+  });
+
+var text = "Ok";
+$(".buttonThree").click(function(){
+$(".special").html(text);
+
+
 });
-//function that delets one of the paragraphs when the button is clicked
-
-
-
-var lis = $(".lista li");
-console.log(lis);
-
-
-  var all = lis[nrRandom(0,lis.length-1)];
-lis.each(function(){
-$("button").click(function(){
-all.remove();
-console.log("test");
-});
-});
-
 
 });
