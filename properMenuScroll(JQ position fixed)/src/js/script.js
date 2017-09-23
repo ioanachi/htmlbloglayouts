@@ -186,11 +186,13 @@ $(document).ready(function() {
 
   $(".buttonSix").click(function() {
     var collectText = $(".textar").val();
-
     var marck = $('.highlight').html();
     // marck =  marck.replace(\\/collectText, "<b>" + collectText + "</b>");
-    marck = marck.replace( new RegExp( collectText, 'g' ), '<b class="hih">' + collectText + "</b>" );
+    marck = marck.replace(new RegExp(collectText, 'g'), '<b class="hih">' + collectText + "</b>");
     $('.highlight').html(marck);
   });
+
+
+
 
 });
