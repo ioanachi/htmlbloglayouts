@@ -9,11 +9,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <div class="row">
+        <h1>Variables</h1>
+        <p>var a = 5; // <span class="type1"></span></p>
+        <p>var a = "5"; // <span class="type2"></span></p>
+        <p> var a = true or false // <span class="type3"></span></p>
+        <p>var array = [1, 2, 3]; // array <span class="type4"></span></p>
+        <p>var a = { 'key':'value' }; // jSon <span class="type5"></span></p>
 
-          <div class="col-lg-4">
-            <h1>Variables</h1>
-            <pre>
+          <h1>Variables</h1>
+          <pre>
 var a = 5; // <span class="type1"></span>
 var a = "5"; // <span class="type2"></span>
 var a = true or false // <span class="type3"></span>
@@ -21,10 +25,10 @@ var array = [1, 2, 3]; // array <span class="type4"></span>
 var a = { 'key':'value' }; // jSon <span class="type5"></span>
 var a = null; // <span class="type6"></span>
           </pre>
-            <h3>Converting</h3>
+          <h3>Converting</h3>
 
 
-            <pre>
+          <pre>
   //convert integer to string
   var a = 5; // <span class="type7"></span>
   a = a.toString();   // <span class="type8"></span>
@@ -35,56 +39,94 @@ var a = null; // <span class="type6"></span>
 var a = '5';   //<span class="type9"></span>
  a = parseInt(a);  // <span class="type10"></span>
 </pre>
-            <p>Type</p>
-            <pre>
+          <p>Type</p>
+          <pre>
 var a = 5;
 console.log(typeof a);  //integer
 var b = '5';
 console.log(typeof b);  //string
 console.log(typeof c);  //undefined
 </pre>
-<h3>Attributors</h3>
-<p>var a = 'mara';</p>
-<p>var b = 'are';</p>
-<p>var c = 100;</p>
-<p>var d = 'mere';</p>
-<p>console.log(a+b+c+d); // maraare100mere</p>
-<p>console.log(a+' '+b+' '+c + ' '+d); // mara are 100 mere</p>
-<p>console.log(a+' '+b+' '+(c +1)+ ' '+d); // mara are 101 mere</p>
-<p>console.log(a+' '+b+' '+c +'1'+ ' '+d); // mara are 1001 mere</p>
+          <h3>Attributors</h3>
+          <p>var a = 'mara';</p>
+          <p>var b = 'are';</p>
+          <p>var c = 100;</p>
+          <p>var d = 'mere';</p>
+          <p>console.log(a+b+c+d); // maraare100mere</p>
+          <p>console.log(a+' '+b+' '+c + ' '+d); // mara are 100 mere</p>
+          <p>console.log(a+' '+b+' '+(c +1)+ ' '+d); // mara are 101 mere</p>
+          <p>console.log(a+' '+b+' '+c +'1'+ ' '+d); // mara are 1001 mere</p>
 
 
-          </div>
-
-          <div class="col-lg-4">
-
-            <h1>Conditionals</h1>
-            <pre>
-
-if(true){
-//  enters here
- };
 
 
- if(false){
- // does not enter here
-  }
+          <h1>Conditionals</h1>
+          <pre>
 
-  var a = 55;
-  a = (typeof a == 'string'? a : 10);   // if statement. daca valoarea lui a e dupa == atunci a ia valoarea initiala, daca nu ia val dupa:
-                                       // typeof intoarce tipul variabilei
+                if(true){
+                //  enters here
+                 };
+
+
+                 if(false){
+                 // does not enter here
+                  }
+
+                  var a = 55;
+                  a = (typeof a == 'string'? a : 10);   // if statement. daca valoarea lui a e dupa == atunci a ia valoarea initiala, daca nu ia val dupa:
+                                                       // typeof intoarce tipul variabilei
 
             </pre>
 
-          </div>
 
-          <div class="col-lg-4">
-            <h1>Operators</h1>
-          </div>
+          <h1>Operators</h1>
+          <pre>
+              var z = 1;
+              console.log(z=2); //true
+              console.log(z==1); //false
+              console.log(z===2); // true
+              console.log(z==='2'); // false
+              console.log(z=='2'); // true
+            </pre>
+          <h1>Functions</h1>
+          <pre>
+              function primaFunctie(){
+                console.log('prima functie');
+              }
+              primaFunctie(); // afiseaza in consola prima functie
 
+
+
+              function cuParametrii(text){
+                console.log(text);
+              }
+
+              cuParametrii('acesta este un parametru'); //afiseaza 'acesta este un parametru' in consola
+
+
+              function careIntoarce(){
+                return 'ceva';
+              }
+
+              console.log(careIntoarce()); // afiseaza 'ceva'
+
+              var altaDeclarare = function(){
+                console.log('se pare ca merge!');
+              }
+
+              altaDeclarare(); // intoarce 'se pare ca merge' in consola
+
+              var altaCuParametrii = function(smth,smthB){
+                console.log(smth);
+                console.log(smthB);
+              }
+
+              altaCuParametrii('unu','doi'); // afiseaza pe linii diferite
+            </pre>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <script src="./dist/commons.js"></script>
   <script src="./dist/bundle.js"></script>
