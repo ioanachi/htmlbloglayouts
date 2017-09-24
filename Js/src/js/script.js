@@ -31,4 +31,63 @@ $('.type9').html(typeof z);
 z = parseInt(z);
 $('type10').html(typeof z);
 
+
+
+
+
+
+//exercisess
+
+
+
+function reverseString (n){
+
+n = n+"";
+return n.split("").reverse().join("");
+};
+console.log(reverseString("nurse"))
+
+
+
+function checkString(strin){
+
+
+  var low = strin.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+  var count = 0;
+  if (low ===""){
+    alert("Nothing found");
+    return false;
+  }
+if ((low.length)%2 ===0){
+count = low.length /2;
+}
+else{
+  if(low.length === 1){
+alert("Entry is a polidrome");
+return true;
+  } else{
+    count = (low.length-1)/2;
+  }
+}
+for (var x = 0; x<count; x++){
+
+  if(low[x] != low.slice(-1-x)[0]){
+    alert ("Entry is not a palindrome.");
+    return false;
+  }
+}
+alert("The entry is a palindrome.");
+	return true;
+
+}
+checkString('madam')
+checkString('nurse')
+
+
+
+
+
+
+
+
 });
