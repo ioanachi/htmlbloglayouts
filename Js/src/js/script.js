@@ -20,4 +20,15 @@ $('.type5').html(typeof Jx);
 var d = null;
 $('.type6').html(typeof d);
 
+
+var x = 5;
+$('.type7').html(typeof x);
+x = x.toString();
+$('.type8').html(typeof x);
+
+var z = '5';
+$('.type9').html(typeof z);
+z = parseInt(z);
+$('type10').html(typeof z);
+
 });
