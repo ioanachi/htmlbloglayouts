@@ -4,9 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Second Layout</title>
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<!-- Place in the <head>, after the three links -->
+
 </head>
 
 <body>
+
+
   <header>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
   </header>
@@ -64,6 +69,27 @@
     </div>
     <div class="row welcome mouse">
       <h1 class="welcome">Welcome to our site</h1>
+
+      <!-- Slide show from flexslider -->
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide2.jpg" />
+    </li>
+    <li>
+      <img src="slide3.jpg" />
+    </li>
+    <li>
+      <img src="slide4.jpg" />
+    </li>
+  </ul>
+</div>
+
+
+
       <div class="col-lg-3">
         <div class="table">
           <h3>September</h3>
@@ -263,9 +289,9 @@
 
   </div>
 
-
   <script src="./dist/commons.js"></script>
   <script src="./dist/bundle.js"></script>
+
 </body>
 
 </html>
