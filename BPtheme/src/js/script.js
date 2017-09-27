@@ -80,3 +80,49 @@ var functie = {
   },
 };
 functie.c();
+console.log('--------------------------------------------------6');
+
+
+var $ = require ("jquery");
+
+$("document").ready(function(){
+
+
+//json care intoarce  indexul si valoarea din elementul de lista pe care faci click
+var arr = []
+$(".myList li a").click(function(){
+  $(".myList li a").removeClass("liStyle");
+$(this).addClass("liStyle");
+console.log($(this));
+
+var ar = $(this).html();
+arr.push(ar);
+var inx = $(this).parent().index();
+console.log(inx);
+
+var jee = {
+'index': inx,
+'value': ar,
+
+};
+console.log(jee);
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
