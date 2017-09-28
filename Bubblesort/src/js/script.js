@@ -6,7 +6,7 @@ var arr2 = [1,34,3,2,87,7]
   function sortX(arr2) {
     var z = false;
     for (var i = 0; i < (arr2.length - 1); i++) {
-      if (arr2[i + 1] < arr2[i]) {
+      if (parseInt(arr2[i + 1]) < parseInt(arr2[i])) {
         var x = arr2[i];
         console.log(x);
 
@@ -28,7 +28,7 @@ console.log(arr2);
   $(".button").click(function() {
     var vAl = $(".valoare").val();
     console.log(vAl);
-var Yy= 0;
+    var Yy= 0;
     Yy = vAl.split(',');
     console.log(Yy);
     console.log("test");
