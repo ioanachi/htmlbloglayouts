@@ -24,7 +24,7 @@ var arr2 = [1,34,3,2,87,7]
   }
 var arrange = sortX(arr2);
 console.log(arr2);
-
+void(0);
   $(".button").click(function() {
     var vAl = $(".valoare").val();
     console.log(vAl);
