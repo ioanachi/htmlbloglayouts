@@ -196,9 +196,9 @@ $(document).ready(function() {
 
   // slideshow from flexslider
 
-    $('.flexslider').flexslider({
-      animation: "slide"
-    });
+    // $('.flexslider').flexslider({
+    //   animation: "slide"
+    // });
 
 
 
