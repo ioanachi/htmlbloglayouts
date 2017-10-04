@@ -1,8 +1,7 @@
-var $ = require("jquery");
-$ ("document").ready(function(){
+jQuery("document").ready(function($){
 
 $ ("button").click(function(){
-var textul = $ ("input").html();
+var textul = $ ("#text").val();
 
 
 
@@ -12,7 +11,7 @@ var textul = $ ("input").html();
 
   // initialize and show QR code
    var qrcode = new QRCode("QRCode", {
-       text: 'test',
+       text: textul,
        width: 300,
        height: 300,
        colorDark: "#000000",
