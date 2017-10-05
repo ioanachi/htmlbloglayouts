@@ -1,0 +1,58 @@
+body {
+  background: white;
+
+  .menu {
+    position: fixed;
+    z-index: 2;
+    background: white;
+    right: 700px;
+    -webkit-box-shadow: 0 5px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 5px 24px -7px rgba(0,0,0,0.75);
+    box-shadow: 0 5px 24px -7px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px groove #e4e4e4;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 10px 13px;
+
+      a {
+        padding: 9px;
+
+        &:hover {
+          background: red;
+        }
+      }
+    }
+  }
+
+  .button{
+
+
+
+  }
+  .textbox{
+margin-top: 120px;
+
+
+
+  }
+  .continut {
+    margin-top: 120px;
+
+.liStyle{
+background: blue;
+color: white;
+padding: 2px;
+
+
+}
+
+
+
+  }
+
+}
