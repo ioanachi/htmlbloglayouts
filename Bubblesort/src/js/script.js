@@ -2,7 +2,7 @@ var $ = require("jquery");
 
 $("document").ready(function() {
 
-var arr2 = [1,34,3,2,87,7]
+var arr2 = [1,34,3,2,87,7];
   function sortX(arr2) {
     var z = false;
     for (var i = 0; i < (arr2.length - 1); i++) {
@@ -24,7 +24,7 @@ var arr2 = [1,34,3,2,87,7]
   }
 var arrange = sortX(arr2);
 console.log(arr2);
-void(0);
+
   $(".button").click(function() {
     var vAl = $(".valoare").val();
     console.log(vAl);
@@ -33,7 +33,7 @@ void(0);
     console.log(Yy);
     console.log("test");
 
-    var Vw = sortX(Yy)
+    var Vw = sortX(Yy);
     var final = Vw.toString();
     console.log(final);
 
