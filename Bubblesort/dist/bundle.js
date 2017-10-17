@@ -471,7 +471,7 @@ __webpack_require__(15);
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n<html>\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <title></title>\r\n\r\n  </head>\r\n\r\n\r\n\r\n\r\n  <body>\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-lg-12\">\r\n\r\n<form action=\"index.html\" method=\"post\">\r\n  <input type=\"text\" class=\"valoare\" name=\"\" value=\"\">\r\n</form>\r\n<button type=\"button\" class=\"button\" name=\"button\">Arrange numbers</button>\r\n\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<h2 class=\"show\"></h2>\r\n\r\n<script src=\"./dist/commons.js\"></script>\r\n<script src=\"./dist/bundle.js\"></script>\r\n  </body>\r\n</html>\r\n";
+module.exports = "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title></title>\n\n  </head>\n\n\n\n\n\n  <body>\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-lg-12\">\n<h3>Introduce numbers separated by \",\" to arrange them in an ascending order</h3>\n<form action=\"index.html\" method=\"post\">\n  <input type=\"text\" class=\"valoare\" name=\"\" value=\"\">\n</form>\n<button type=\"button\" class=\"button\" name=\"button\">Arrange numbers</button>\n\n</div>\n</div>\n</div>\n\n<h2 class=\"show\"></h2>\n\n<script src=\"./dist/commons.js\"></script>\n<script src=\"./dist/bundle.js\"></script>\n  </body>\n</html>\n";
 
 /***/ }),
 /* 6 */

@@ -6,7 +6,6 @@ $(document).ready(function() {
   var position = menu.offset();
   var menuTop = position.top;
 
-
   $(document).scroll(function() {
     var doc = $(document).scrollTop();
     if (doc >= 100) {
